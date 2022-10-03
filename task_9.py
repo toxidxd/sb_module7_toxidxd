@@ -8,18 +8,14 @@ print('Задача 9. ...Теперь можно посчитать и свою
 # Напишите программу, которая проверяет, упорядочены ли они по возрастанию.
 
 previous_profit = 0
-profit_order = True
 
 for _ in range(10):
     profit = int(input("Введите ЗП: "))
 
     if profit < previous_profit:
         profit_order = False
+        print("Значения не упорядочены!")
         break
 
     previous_profit = profit
 
-if not profit_order:
-    print("Значения не упорядочены!")
-else:
-    print("Значения упорядочены!")
