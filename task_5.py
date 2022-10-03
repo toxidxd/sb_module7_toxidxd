@@ -14,3 +14,11 @@ print('Задача 5. Факториал')
 # 
 # Введите число: 5
 # Факториал числа 5 равен 120
+
+number = int(input("Введите число: "))
+numberFact = number
+
+for num in range(1, number):
+    numberFact *= num
+
+print(f"Факториал числа {number} равен {numberFact}")
