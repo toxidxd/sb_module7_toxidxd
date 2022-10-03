@@ -26,3 +26,15 @@ print('Задача 4. С заботой о природе')
 # Людей в 35 секторе: 1
 # Всё спокойно.
 # Количество нарушений: 2
+
+violationCount = 0
+
+for area in range(30, 36):
+    humans = int(input(f"Людей в {area} секторе: "))
+    if humans > 10:
+        print("Нарушение! Слишком много людей в секторе!")
+        violationCount += 1
+    else:
+        print("Всё спокойно.")
+
+print(f"Количество нарушений: {violationCount}")
