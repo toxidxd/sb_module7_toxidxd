@@ -8,3 +8,16 @@ print('Задача 10.')
 # далее еще N − 1 чисел: 
 # номера оставшихся карточек (различные числа от 1 до N).
 # Программа должна вывести номер потерянной карточки.
+
+cards_count = int(input("Введите количество карточек: "))
+
+cards_num_summ = 0
+
+for card in range(cards_count):
+    cards_num_summ += card + 1
+
+for card in range(cards_count - 1):
+    card_num = int(input("Введите номер оставшейся карточки: "))
+    cards_num_summ -= card_num
+
+print(f"Номер пропавшей карточки: {cards_num_summ}")
